@@ -1,7 +1,7 @@
-# shravan-portfolio-
+# shravan-portfolio
 Personal portfolio of Shravan Nikalaje — Computer Engineering Student & Aspiring Full-Stack Developer.
 
-हा प्रोजेक्टमध्ये फ्रंट-एंड पोर्टफोलिओ वेबसाइट आहे, जी Shravan Nikalaje यांनी विकसित केली आहे. या प्रकल्पात HTML, CSS आणि JavaScript वापरले आहेत.
+This project is a front-end portfolio website developed by Shravan Nikalaje to showcase his skills, projects, and contact information in a clean and modern design.
 
 Technologies used:
 - HTML

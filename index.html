@@ -185,6 +185,39 @@
       color: #475569;
     }
 
+    /* Profile image + name layout */
+    .profile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .profile__img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid rgba(255,255,255,0.06);
+      box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.05));
+    }
+
+    .profile__meta {
+      text-align: left;
+      min-width: 180px;
+    }
+
+    .profile__meta h1 {
+      margin: 0 0 6px 0;
+      font-size: 1.8rem;
+    }
+
+    .profile__meta .tagline {
+      margin: 0 0 10px 0;
+    }
+
     .btn {
       display: inline-block;
       background: #38bdf8;
@@ -204,6 +237,13 @@
     body.light-mode .btn {
       background: #0f172a;
       color: #f8f9fa;
+    }
+
+    @media (max-width: 480px) {
+      .profile__img { width: 72px; height: 72px; }
+      .profile__meta h1 { font-size: 1.2rem; }
+      .profile__meta { min-width: 0; text-align: center; }
+      .profile { gap: 12px; }
     }
 
     section {
@@ -462,14 +502,19 @@
     </div>
 
     <header>
-      <h1 lang-en="Shravan Nikalaje" lang-mr="श्रवण निकाळजे">Shravan Nikalaje</h1>
-      <p class="tagline" lang-en="First-Year Computer Engineering Student | Aspiring Full-Stack Developer" lang-mr="प्रथम वर्ष संगणक अभियांत्रिकी विद्यार्थी | aspiring Full-Stack Developer">First-Year Computer Engineering Student | Aspiring Full-Stack Developer</p>
-      <a href="#contact" class="btn" lang-en="Get in Touch" lang-mr="संपर्कात येा">Get in Touch</a>
+      <div class="profile">
+        <img src="assets/img/profile.jpg" alt="Shravan Nikalaje" class="profile__img">
+        <div class="profile__meta">
+          <h1 lang-en="Shravan Nikalaje" lang-mr="श्रवण निकाळजे">Shravan Nikalaje</h1>
+          <p class="tagline" lang-en="First-Year Computer Engineering Student | Aspiring Full-Stack Developer" lang-mr="प्रथम वर्ष संगणक अभियांत्रिक्">First-Year Computer Engineering Student | Aspiring Full-Stack Developer</p>
+          <a href="#contact" class="btn" lang-en="Get in Touch" lang-mr="संपर्कात येा">Get in Touch</a>
+        </div>
+      </div>
     </header>
 
     <section id="about">
       <h2 lang-en="About Me" lang-mr="माझ्याबद्दल">About Me</h2>
-      <p lang-en="Hello 👋 My name is Shravan Nikalaje. I am a First-Year Computer Engineering student and an aspiring Full-Stack Developer. My coding journey began back in 9th grade, giving me a solid foundation in problem solving, creativity, and real-world software thinking." lang-mr="नमस्कार 👋 माझं नाव श्रवण निकाळजे आहे. मी प्रथम वर्षाचा संगणक अभियांत्रिकी विद्यार्थी आणि aspiring Full-Stack Developer आहे. माझा कोडिंग प्रवास 9 व्या इयत्तेपासून सुरू झाला, ज्यामुळे मला समस्या सोडवण्याची, सर्जनशीलतेची आणि वास्तविक जगातील सॉफ्टवेअर विचारांची मजबूत आधार मिळाला.">Hello 👋 My name is Shravan Nikalaje. I am a First-Year Computer Engineering student and an aspiring Full-Stack Developer. My coding journey began back in 9th grade, giving me a solid foundation in problem solving, creativity, and real-world software thinking.</p>
+      <p lang-en="Hello 👋 My name is Shravan Nikalaje. I am a First-Year Computer Engineering student and an aspiring Full-Stack Developer. My coding journey began back in 9th grade, giving me[...]" lang-mr="हॅलो">Hello 👋 My name is Shravan Nikalaje. I am a First-Year Computer Engineering student and an aspiring Full-Stack Developer. My coding journey began back in 9th grade, giving me[...]</p>
     </section>
 
     <section id="skills">
@@ -501,47 +546,47 @@
         <span class="skill-tag">Power BI</span>
       </div>
 
-      <p style="color: #94a3b8; font-size: 0.95rem; margin-top: 12px;" lang-en="What I can handle: Set up and scaffold development projects in VS Code / IDE / DevC++; perform 2D & 3D mechanical design tasks; manage documentation and workflow tools; and work with business and productivity software for technical operations." lang-mr="मी काय हाताळू शकतो: VS Code / IDE / DevC++ मध्ये डेव्हलपमेंट प्रोजेक्ट सेट अप आणि स्कॅफोल्ड करणे; 2D आणि 3D मेकॅनिकल डिझाइन कामे; डॉक्युमेंटेशन आणि वर्कफ्लो टूल्स हाताळणे; तसेच तांत्रिक ऑपरेशन्ससाठी व्यवसाय आणि प्रोडक्टिव्हिटी सॉफ्टवेअर वापरणे.">What I can handle: Set up and scaffold development projects in VS Code / IDE / DevC++; perform 2D & 3D mechanical design tasks; manage documentation and workflow tools; and work with business and productivity software for technical operations.</p>
+      <p style="color: #94a3b8; font-size: 0.95rem; margin-top: 12px;" lang-en="What I can handle: Set up and scaffold development projects in VS Code / IDE / DevC++; perform 2D & 3D mechanical d[...]" lang-mr="मी हे हाताळू शकतो">What I can handle: Set up and scaffold development projects in VS Code / IDE / DevC++; perform 2D & 3D mechanical d[...]</p>
     </section>
 
     <section id="experience">
       <h2 lang-en="Cross-Industry Exposure" lang-mr="क्रॉस-इंडस्ट्री एक्सपोजर">Cross-Industry Exposure</h2>
-      <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 12px;" lang-en="Hands-on experience and operational understanding across diverse engineering and business sectors:" lang-mr="विविध अभियांत्रिकी आणि व्यवसाय क्षेत्रांमध्ये अनुभव आणि ऑपरेशनल समज:">Hands-on experience and operational understanding across diverse engineering and business sectors:</p>
+      <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 12px;" lang-en="Hands-on experience and operational understanding across diverse engineering and business sectors:" lang-mr="अनुभव">Hands-on experience and operational understanding across diverse engineering and business sectors:</p>
       <div class="exp-grid">
         <div class="exp-card">
           <h4>💻 Information Technology (IT)</h4>
-          <p lang-en="Full-stack web applications, front-end architecture, digital tools, and scalable software workflow." lang-mr="पूर्ण-स्टॅक वेब अॅप्स, फ्रंट-एंड आर्किटेक्चर, डिजिटल टूल्स आणि स्केलेबल सॉफ्टवेअर वर्कफ्लो.">Full-stack web applications, front-end architecture, digital tools, and scalable software workflow.</p>
+          <p lang-en="Full-stack web applications, front-end architecture, digital tools, and scalable software workflow." lang-mr="पूर्ण-स्टॅक वेब अॅप्स, फ">Full-stack web applications, front-end architecture, digital tools, and scalable software workflow.</p>
         </div>
         <div class="exp-card">
           <h4>💊 Pharmaceutical Industry</h4>
-          <p lang-en="Exposure to operational standards, quality processes, and tech integrations in pharma manufacturing environments." lang-mr="फार्मा मॅन्युफॅक्चरिंग वातावरणात ऑपरेशनल स्टँडर्ड्स, क्वालिटी प्रोसेसेस आणि टेक्नॉलॉजी इंटिग्रेशनचा अनुभव.">Exposure to operational standards, quality processes, and tech integrations in pharma manufacturing environments.</p>
+          <p lang-en="Exposure to operational standards, quality processes, and tech integrations in pharma manufacturing environments." lang-mr="फार्मा">Exposure to operational standards, quality processes, and tech integrations in pharma manufacturing environments.</p>
         </div>
         <div class="exp-card">
           <h4>🚗 Automotive &amp; Car Manufacturing</h4>
-          <p lang-en="Insight into industrial assembly lines, automotive production workflows, and manufacturing systems." lang-mr="औद्योगिक असेंबली लाइन, ऑटोमोटिव्ह प्रोडक्शन वर्कफ्लो आणि मॅन्युफॅक्चरिंग सिस्टमचा समज.">Insight into industrial assembly lines, automotive production workflows, and manufacturing systems.</p>
+          <p lang-en="Insight into industrial assembly lines, automotive production workflows, and manufacturing systems." lang-mr="औद्योगिक">Insight into industrial assembly lines, automotive production workflows, and manufacturing systems.</p>
         </div>
       </div>
     </section>
 
     <section id="industry-hubs">
       <h2 lang-en="Tech &amp; Industrial Hub Expeditions" lang-mr="तंत्रज्ञान आणि औद्योगिक हब मोहीम">Tech &amp; Industrial Hub Expeditions</h2>
-      <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 12px;" lang-en="Key visits to premier technology ecosystems and major industrial clusters:" lang-mr="प्रमुख तंत्रज्ञान इकोसिस्टम आणि मोठ्या औद्योगिक क्लस्टरला केलेली भेटी:">Key visits to premier technology ecosystems and major industrial clusters:</p>
+      <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 12px;" lang-en="Key visits to premier technology ecosystems and major industrial clusters:" lang-mr="प्रमुख">Key visits to premier technology ecosystems and major industrial clusters:</p>
       <div class="visit-list">
         <div class="visit-item">
           <div class="visit-title">📍 Bengaluru — Silicon Valley of India</div>
-          <div class="visit-desc" lang-en="Explored leading tech ecosystems, startup incubation networks, and cutting-edge software engineering culture." lang-mr="अग्रगण्य तंत्रज्ञान इकोसिस्टम, स्टार्टअप इंक्युबेशन नेटवर्क आणि अत्याधुनिक सॉफ्टवेअर अभियांत्रिकी संस्कृतीचे अवलोकन.">Explored leading tech ecosystems, startup incubation networks, and cutting-edge software engineering culture.</div>
+          <div class="visit-desc" lang-en="Explored leading tech ecosystems, startup incubation networks, and cutting-edge software engineering culture." lang-mr="अग्रगण्य">Explored leading tech ecosystems, startup incubation networks, and cutting-edge software engineering culture.</div>
         </div>
         <div class="visit-item">
           <div class="visit-title">📍 Hyderabad — Premier IT Sector &amp; Cyberabad</div>
-          <div class="visit-desc" lang-en="Observed massive enterprise tech hubs, global capability centers, and modern IT infrastructure." lang-mr="मोठे एंटरप्राइझ टेक हब्स, ग्लोबल कॅपेबिलिटी सेंटर आणि आधुनिक IT इन्फ्रास्ट्रक्चरचा आढावा.">Observed massive enterprise tech hubs, global capability centers, and modern IT infrastructure.</div>
+          <div class="visit-desc" lang-en="Observed massive enterprise tech hubs, global capability centers, and modern IT infrastructure." lang-mr="मोठे">Observed massive enterprise tech hubs, global capability centers, and modern IT infrastructure.</div>
         </div>
         <div class="visit-item">
           <div class="visit-title">📍 Visakhapatnam — Major Pharmaceutical &amp; Industrial Hub</div>
-          <div class="visit-desc" lang-en="Engaged with bulk-drug manufacturing environments, coastal chemical export zones, and industrial supply chains." lang-mr="बल्क-ड्रग मॅन्युफॅक्चरिंग वातावरण, कोस्टल केमिकल एक्सपोर्ट झोन आणि औद्योगिक पुरवठा साखळीशी संवाद.">Engaged with bulk-drug manufacturing environments, coastal chemical export zones, and industrial supply chains.</div>
+          <div class="visit-desc" lang-en="Engaged with bulk-drug manufacturing environments, coastal chemical export zones, and industrial supply chains." lang-mr="बल्क">Engaged with bulk-drug manufacturing environments, coastal chemical export zones, and industrial supply chains.</div>
         </div>
         <div class="visit-item">
           <div class="visit-title">📍 Goa &amp; Coastal Industrial Corridors</div>
-          <div class="visit-desc" lang-en="Studied regional supply chain logistics and industrial growth corridors." lang-mr="प्रादेशिक पुरवठा साखळी लॉजिस्टिक्स आणि औद्योगिक विकास कॉरिडॉर्सचा अभ्यास.">Studied regional supply chain logistics and industrial growth corridors.</div>
+          <div class="visit-desc" lang-en="Studied regional supply chain logistics and industrial growth corridors." lang-mr="प्रादेशिक">Studied regional supply chain logistics and industrial growth corridors.</div>
         </div>
       </div>
     </section>
@@ -551,7 +596,7 @@
 
       <div class="project-card">
         <h3>1. 🧹 EcoSafai — Home Cleaning Services</h3>
-        <p lang-en="An on-demand home cleaning service booking platform connecting users with eco-friendly cleaning professionals. Built with interactive booking options, service catalogs, and an easy user journey." lang-mr="ऑन-डिमांड होम क्लीनिंग सर्व्हिस बुकिंग प्लॅटफॉर्म, ज्यामुळे वापरकर्ते पर्यावरणपूरक क्लीनिंग प्रोफेशनल्सशी जोडतात. इंटरएक्टिव बुकिंग पर्याय, सर्व्हिस katal og, आणि सोपा वापरकर्ता प्रवास या वैशिष्ट्यांसह तयार केलेले.">An on-demand home cleaning service booking platform connecting users with eco-friendly cleaning professionals. Built with interactive booking options, service catalogs, and an easy user journey.</p>
+        <p lang-en="An on-demand home cleaning service booking platform connecting users with eco-friendly cleaning professionals. Built with interactive booking options, service catalogs, and an[...]" lang-mr="व">An on-demand home cleaning service booking platform connecting users with eco-friendly cleaning professionals. Built with interactive booking options, service catalogs, and an[...]
         <div class="tech-tags">
           <span class="tag">Web Development</span>
           <span class="tag">UI/UX</span>
@@ -565,7 +610,7 @@
 
       <div class="project-card">
         <h3>2. 🌱 Smart Farm Portal Online</h3>
-        <p lang-en="A smart agriculture and farming management web portal providing farmers with essential digital resources, crop management insights, and agricultural tools online." lang-mr="एक स्मार्ट कृषी आणि शेती व्यवस्थापन वेब पोर्टल, जे शेतकऱ्यांना आवश्यक डिजिटल संसाधने, पिक व्यवस्थापन माहिती आणि ऑनलाइन कृषी साधने देते.">A smart agriculture and farming management web portal providing farmers with essential digital resources, crop management insights, and agricultural tools online.</p>
+        <p lang-en="A smart agriculture and farming management web portal providing farmers with essential digital resources, crop management insights, and agricultural tools online." lang-mr="कृषी">A smart agriculture and farming management web portal providing farmers with essential digital resources, crop management insights, and agricultural tools online.
         <div class="tech-tags">
           <span class="tag">AgriTech</span>
           <span class="tag">HTML5 / CSS3</span>
@@ -573,13 +618,13 @@
           <span class="tag">GitHub Pages</span>
         </div>
         <div class="project-btn-group">
-          <a href="https://shravannikalje.github.io/Smart-Farm-Portal-Online/" target="_blank" class="p-btn live-btn" lang-en="Live Preview ↗" lang-mr="लाइव प्रिव्ह्यू ↗">Live Preview ↗</a>
+          <a href="https://shravannikalje.github.io/Smart-Farm-Portal-Online/" target="_blank" class="p-btn live-btn" lang-en="Live Preview ↗" lang-mr="लाइव प्रिव्ह्य">Live Preview ↗</a>
         </div>
       </div>
 
       <div class="project-card">
         <h3>3. 🎨 Shravan Creative Studio</h3>
-        <p lang-en="A digital creative agency showcase website featuring modern UI design, interactive visual elements, and high-impact branding presentation." lang-mr="एक डिजिटल क्रिएटिव्ह एजन्सी शोकेस वेबसाइट, ज्यामध्ये आधुनिक UI डिझाइन, इंटरएक्टिव व्हिज्युअल घटक आणि प्रभावी ब्रँडिंग प्रेझेंटेशन आहे.">A digital creative agency showcase website featuring modern UI design, interactive visual elements, and high-impact branding presentation.</p>
+        <p lang-en="A digital creative agency showcase website featuring modern UI design, interactive visual elements, and high-impact branding presentation." lang-mr="एक">A digital creative agency showcase website featuring modern UI design, interactive visual elements, and high-impact branding presentation.
         <div class="tech-tags">
           <span class="tag">Creative UI</span>
           <span class="tag">CSS Animation</span>
@@ -587,13 +632,13 @@
           <span class="tag">GitHub Pages</span>
         </div>
         <div class="project-btn-group">
-          <a href="https://shravannikalje.github.io/shravan-creative-studio/" target="_blank" class="p-btn live-btn" lang-en="Live Preview ↗" lang-mr="लाइव प्रिव्ह्यू ↗">Live Preview ↗</a>
+          <a href="https://shravannikalje.github.io/shravan-creative-studio/" target="_blank" class="p-btn live-btn" lang-en="Live Preview ↗" lang-mr="लाइव प्रिव्ह्य">Live Preview ↗</a>
         </div>
       </div>
 
       <div class="project-card">
         <h3>4. 💻 IT Training Institute Website</h3>
-        <p lang-en="A responsive coaching and educational portal for an IT institute, showcasing technical courses, modern syllabus details, batch schedules, and student admission inquiry options." lang-mr="IT इन्स्टिट्यूटसाठी एक रिस्पॉन्सिव कोचिंग आणि शैक्षणिक पोर्टल, ज्यामध्ये तांत्रिक कोर्सेस, आधुनिक अभ्यासक्रम तपशील, बॅच वेळापत्रक आणि विद्यार्थी प्रवेश माहिती पर्याय दाखवले गेले आहेत.">A responsive coaching and educational portal for an IT institute, showcasing technical courses, modern syllabus details, batch schedules, and student admission inquiry options.</p>
+        <p lang-en="A responsive coaching and educational portal for an IT institute, showcasing technical courses, modern syllabus details, batch schedules, and student admission inquiry options[...]" lang-mr="एक">A responsive coaching and educational portal for an IT institute, showcasing technical courses, modern syllabus details, batch schedules, and student admission inquiry options[...]
         <div class="tech-tags">
           <span class="tag">Education Portal</span>
           <span class="tag">HTML5 / CSS3</span>
@@ -601,13 +646,13 @@
           <span class="tag">Responsive UI</span>
         </div>
         <div class="project-btn-group">
-          <a href="https://shravannikalje.github.io/IT-Training-Institute-Website/" target="_blank" class="p-btn live-btn" lang-en="Live Preview ↗" lang-mr="लाइव प्रिव्ह्यू ↗">Live Preview ↗</a>
+          <a href="https://shravannikalje.github.io/IT-Training-Institute-Website/" target="_blank" class="p-btn live-btn" lang-en="Live Preview ↗" lang-mr="लाइव प्रिव्ह्य">Live Preview ↗</a>
         </div>
       </div>
 
       <div class="project-card">
         <h3>5. 💼 Personal Developer Portfolio</h3>
-        <p lang-en="A mobile-first responsive portfolio website hosted on GitHub Pages to showcase tech skills, engineering projects, and contact info." lang-mr="GitHub Pages वर होस्ट केलेले एक मोबाइल-फर्स्ट रिस्पॉन्सिव पोर्टफोलिओ वेबसाइट, ज्यामध्ये तंत्रज्ञान कौशल्ये, अभियांत्रिकी प्रोजेक्ट्स आणि संपर्क माहिती दर्शवली जाते.">A mobile-first responsive portfolio website hosted on GitHub Pages to showcase tech skills, engineering projects, and contact info.</p>
+        <p lang-en="A mobile-first responsive portfolio website hosted on GitHub Pages to showcase tech skills, engineering projects, and contact info." lang-mr="GitHub Pages वर होस्">A mobile-first responsive portfolio website hosted on GitHub Pages to showcase tech skills, engineering projects, and contact info.
         <div class="tech-tags">
           <span class="tag">HTML5 / CSS3</span>
           <span class="tag">Portfolio</span>
@@ -636,7 +681,7 @@
     </section>
 
     <footer>
-      <p lang-en="© 2026 Shravan Nikalaje. All rights reserved. Released under the MIT License." lang-mr="© 2026 श्रवण निकाळजे. सर्व हक्क राखीव. MIT License अंतर्गत जारी.">© 2026 Shravan Nikalaje. All rights reserved. Released under the MIT License.</p>
+      <p lang-en="© 2026 Shravan Nikalaje. All rights reserved. Released under the MIT License." lang-mr="© 2026 श्रवण निकाळजे. सर्व हक्क राखीव">© 2026 Shravan Nikalaje. All rights reserved. Released under the MIT License.</p>
     </footer>
   </div>
 
